@@ -179,7 +179,7 @@ main section {
         padding: 0 16px;
     }
     nav .left h1 {
-        font-size: 12px;
+        font-size: 18px;
     }
     nav .left .logo {
         font-size: 14px;
@@ -193,4 +193,10 @@ main section {
     }
     
 
+}
+
+@media only screen and (max-width:305px) {
+    nav .left h1 {
+        font-size: 14px;
+    }
 }
