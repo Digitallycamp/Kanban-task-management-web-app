@@ -18,7 +18,8 @@ html {
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
+    background-color: var(--section-bg);
     
 }
 
@@ -57,7 +58,58 @@ aside .logo span:nth-child(2){
     font-weight: 900;
 }
 
+aside .aside_content {
+    padding-top: 64px;
+}
+aside .stats {
+    padding-left: 32px;
+    margin-bottom: 32px;
+}
+aside .stats p {
+    color: var(--sub-heading-text);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+aside .aside_content-list {
+    padding: 0 32px 0 0;
+   
+}
 
+aside .aside_content-links:hover{
+    background-color: var(--primary-color);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+ 
+    color: #FFFFFF;
+   
+}
+
+aside .aside_content-links:hover a{
+    color: var(--heading-text);
+}
+aside .aside_content-links:hover span{
+    color: var(--heading-text);
+}
+aside .aside_content-links .link{
+    display: flex;
+    align-items: center;
+    color: var(--sub-heading-text);
+    font-size: 18px;
+    gap: 8px;
+    padding: 16px 32px;
+}
+
+
+.link a, .link span {
+    color: var(--sub-heading-text);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.create_new-board a , .create_new-board span {
+    color: var(--primary-color);
+}
 
 nav {
    
@@ -125,13 +177,66 @@ main {
     background-color: var(--section-bg);
     width: calc(100% - 25%);
     margin-left: 25%;
+    height: 100%;
+    
         
        
     }
 main section {
     padding: 120px 32px;
+    
 }
 
+.board_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+   
+}
+.boards {
+    width: 100%;
+}
+.boards .top {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.boards .top .status {
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+}
+.boards .top .title {
+    color: var(--heading-text);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.boards .top .no_of-items {
+    color: var(--heading-text);
+   
+    font-weight: 700;
+}
+
+.task_list  {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.task_list .task {
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.task_list .task h3 {
+    color: var(--heading-text);
+    font-size: 16px;
+}
+.task_list .task p{
+    color: var(--sub-heading-text);
+}
 
 /***MEDIA QUERY**/
 
